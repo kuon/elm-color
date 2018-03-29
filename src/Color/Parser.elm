@@ -1,4 +1,4 @@
-module Color.Parse exposing (css, hex, hsl, hsla, rgb)
+module Color.Parser exposing (css, hex, hsl, hsla, rgb)
 
 {-|
 

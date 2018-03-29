@@ -6,7 +6,7 @@ Need to wait for 0.19 before it would work.
 
 -}
 
-import Color.Parse as Parse
+import Color.Parser as Parser
 import Color2 as Color exposing (Color)
 import Expect exposing (Expectation)
 import Fuzz exposing (Fuzzer, int, list, string)
@@ -83,7 +83,7 @@ equalColor c1 c2 =
 
 parse : String -> Color
 parse str =
-    case Parse.css str of
+    case Parser.css str of
         Just c ->
             c
 
