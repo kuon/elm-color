@@ -31,9 +31,15 @@ suite =
         [ rgbTest "#442233" 68 34 51
         , rgbTest "#0608bc" 6 8 188
         , rgbTest "#FaC" 255 170 204
+        , rgbTest "442233" 68 34 51
+        , rgbTest "0608bc" 6 8 188
+        , rgbTest "FaC" 255 170 204
         , rgbaTest "#44223343" 68 34 51 67
         , rgbaTest "#0608bc12" 6 8 188 18
         , rgbaTest "#FaC4" 255 170 204 68
+        , rgbaTest "44223343" 68 34 51 67
+        , rgbaTest "0608bc12" 6 8 188 18
+        , rgbaTest "FaC4" 255 170 204 68
         , rgbTest "rgb(23, 24, 12)" 23 24 12
         , rgbTest "rgb(50%, 15%, 56%)" 127.5 38.25 142.8
         , rgbaTest "rgba(23, 24, 12, 0.3)" 23 24 12 76.5

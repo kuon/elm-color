@@ -225,11 +225,11 @@ hex : String -> Maybe Color
 hex str =
     let
         regexShort =
-            Regex.regex "#([0-9a-f])([0-9a-f])([0-9a-f])([0-9a-f])?"
+            Regex.regex "#?([0-9a-f])([0-9a-f])([0-9a-f])([0-9a-f])?"
                 |> Regex.caseInsensitive
 
         regex =
-            Regex.regex "#([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})?"
+            Regex.regex "#?([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})([0-9a-f]{2})?"
                 |> Regex.caseInsensitive
 
         h2i v =
